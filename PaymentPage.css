@@ -1,0 +1,65 @@
+/* Center the payment page */
+.payment-page {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Payment heading */
+  .payment-page h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Product price */
+  .payment-page p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Payment method section */
+  .payment-page h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  /* Buttons styling */
+  .payment-page button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Different payment button colors */
+  .payment-page button:nth-child(2) {
+    background-color: #4CAF50; /* Green for UPI */
+    color: white;
+  }
+  
+  .payment-page button:nth-child(3) {
+    background-color: #007bff; /* Blue for Card */
+    color: white;
+  }
+  
+  .payment-page button:nth-child(4) {
+    background-color: #ff9800; /* Orange for Net Banking */
+    color: white;
+  }
+  
+  /* Hover effect for buttons */
+  .payment-page button:hover {
+    opacity: 0.8;
+  }
+  

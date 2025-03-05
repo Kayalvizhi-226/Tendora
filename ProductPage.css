@@ -1,0 +1,150 @@
+
+/* ProductPage.css */
+
+/* Overall Product Page Layout */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------------------- */
+/* Product Details Section (Sample Product) */
+/* ---------------------- */
+.product- {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-details h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.product-detail-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;       /* Fixed height for consistency */
+  object-fit: cover;   /* Ensures the image fills the container uniformly */
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+.product-details p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Product Actions: Buttons on the same line */
+.product-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-actions button {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 200px;
+}
+
+.product-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* ---------------------- */
+/* Similar Products Section */
+/* ---------------------- */
+.similar-products-section {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.similar-products-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Grid Layout for Similar Products */
+.similar-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* ---------------------- */
+/* Product Card Styling for Similar Products */
+/* ---------------------- */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;       /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.product-cart{
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 200px;
+}
