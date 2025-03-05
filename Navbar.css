@@ -1,0 +1,260 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+
+.brand-name a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar form {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: none;
+  width: 250px;
+  outline: none;
+}
+
+.search-bar button {
+  background: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Dropdown Menu for Categories */
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar height */
+  left: 10px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #3498db;
+}
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+.dropdown-menu {
+  width:15%;
+  position: absolute;
+  top: 60px; /* Adjust based on navbar height */
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+/* A side nav approach for the dropdown menu */
+.dropdown-menu {
+  position: fixed;        /* Stay in place */
+  top: 0;                 /* Align with the top of the viewport */
+  left: 0;                /* Align with the left edge of the viewport */
+  width: 15%;             /* Same width as navbar-left */
+  height: 100%;           /* Full height */
+  background-color: #333; /* Dark background */
+  color: #fff;            /* White text */
+  z-index: 9999;          /* On top of other elements */
+  transition: transform 0.3s ease; /* Smooth show/hide if needed */
+}
+
+/* If you want the menu to slide in/out, you can initially set transform: translateX(-100%) and remove it when open. But for now, let's keep it simple. */
+
+/* Style the list inside the side nav */
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;          /* Some padding so the items aren’t flush to the edge */
+}
+
+.dropdown-menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #444; /* Subtle separator */
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;         /* Make the entire line clickable */
+}
+
+.dropdown-menu li:hover {
+  background-color: #444; /* Slightly lighter background on hover */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-logout {
+  margin-left: auto;  /* Pushes logout button to the far right */
+}
+
+.logout-btn {
+  background-color: #d9534f; /* Red logout button */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+/* CategoryNav.css */
+.category-nav {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd;
+  white-space: nowrap;
+}
+
+.category-button {
+  background-color: #191cda;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.category-button:hover {
+  background-color: #2012c3;
+}
+
+.category-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.category-nav-loading,
+.category-nav-error {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #ff0000;
+}

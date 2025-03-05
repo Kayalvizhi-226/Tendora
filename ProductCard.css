@@ -1,0 +1,103 @@
+/* General styling for product page */
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Styling for product details */
+.product-details {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-detail-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-actions button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.product-actions button:hover {
+  background-color: #e91e63;
+}
+
+/* Styling for similar products section */
+.similar-products-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.similar-products-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.similar-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+/* Loading & Error Messages */
+.loading,
+.product-not-found {
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+  margin-top: 50px;
+}
+.add-to-cart button{
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+}
+.add-to-wishlist button{
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+}
